@@ -1,19 +1,36 @@
+df_num = df[num_columns]
 
-#sns.pairplot(df)
+sns.clustermap(df_num.corr(),
+               figsize=(10,10),
+               z_score=None,
+               row_cluster=True,
+               col_cluster=True,
+               method='ward',
+               cmap='coolwarm',vmax=1,vmin=-1, 
+               annot=True, annot_kws={"size": 13},cbar_kws={"label": 'Pearson\ncorrelation'})
+## representing the categorical variables
+fig, axes = plt.subplots( 2,3 , figsize = (15,8) )
 
-corre=df.corr()
-plt.figure(figsize=(5,5))
-sns.heatmap(corre,cmap='plasma')
-plt.title('correlations')
-plt.show()
 
-sns.violinplot(y='gender',x='height',data=df , color="0.8" )
-sns.stripplot(y='gender',x='height',data=df , zorder=1 )
-plt.show()
+sns.violinplot(y='gender',x='height',data=df , 
+               color="0.8", inner = 'stick', ax=axes[0,0])
 
-sns.violinplot(y='smoker_nonsmoker',x='height',data=df , color="0.8" )
-sns.stripplot(y='smoker_nonsmoker',x='height',data=df , zorder=1 )
-plt.show()
+sns.violinplot(y='smoker_nonsmoker',x='height',data=df , 
+               color="0.8", inner = 'stick', ax=axes[0,1] )
+
+sns.violinplot(y='birth_place',x='height',data=df , 
+               color="0.8", inner = 'stick', ax=axes[0,2] )
+
+sns.violinplot(y='hair_colour',x='height',data=df ,
+               color="0.8", inner = 'stick', ax=axes[1,0] )
+
+sns.violinplot(y='eye_colour',x='height',data=df ,
+               color="0.8", inner = 'stick', ax=axes[1,1] )
+
+sns.violinplot(y='diet',x='height',data=df , order = [1,2,3,4],
+               color="0.8", inner = 'stick', ax=axes[1,2] )
+
+fig.tight_layout()
 
 #Not normal (do the normality test if you want). So no t test. Let's go for non parametric
 
@@ -26,35 +43,21 @@ stat , pval =  stats.mannwhitneyu( df.height[df.smoker_nonsmoker=='NS'] ,
                                df.height[df.smoker_nonsmoker=='S']  )
 print('Mann-Whitney rank test p-value for smoker :' , pval)
 
-sns.violinplot(y='birth_place',x='height',data=df , color="0.8" )
-sns.stripplot(y='birth_place',x='height',data=df , zorder=1 )
-plt.show()
 
-#Under represented labels : not a good feature
 
-sns.violinplot(y='hair_colour',x='height',data=df , color="0.8" )
-sns.stripplot(y='hair_colour',x='height',data=df , zorder=1 )
-plt.show()
+#birth_place: many under-represented labels 
 
-sns.violinplot(y='eye_colour',x='height',data=df , color="0.8" )
-sns.stripplot(y='eye_colour',x='height',data=df , zorder=1 )
-plt.show()
-
-sns.violinplot(y='diet',x='height',data=df , color="0.8" )
-sns.stripplot(y='diet',x='height',data=df , zorder=1 )
-plt.show()
-
-# Again, no ANOVA for us here, so we replace it with a Kruskal-Wallis test. 
+# no ANOVA for us here, so we replace it with a Kruskal-Wallis test. 
 # H1 is a significant association of the factor with a change in the average of the numerical variable
 
-print('Kruskal test for hair colour')
+print('Kruskal-Wallis test for hair colour')
 s,pval = stats.kruskal(df.height[df.hair_colour=='lb'] , df.height[df.hair_colour=='db'], df.height[df.hair_colour=='bl'])
 print('\t\t->',pval)
 
-print('Kruskal test for eye colour')
+print('Kruskal-Wallis test for eye colour')
 s,pval = stats.kruskal(df.height[df.eye_colour=='1'] , df.height[df.eye_colour=='2'], df.height[df.eye_colour=='3'], df.height[df.eye_colour=='4'])
 print('\t\t->',pval)
 
-print('Kruskal test for diet')
+print('Kruskal-Wallis test for diet')
 s,pval = stats.kruskal(df.height[df.diet=='1'] , df.height[df.diet=='2'], df.height[df.diet=='3'], df.height[df.diet=='4'])
 print('\t\t->',pval)

@@ -3,7 +3,7 @@
 fig,axes = plt.subplots(1,2 , figsize=(14,7),  sharey=True )
 sns.histplot(y=df['weightDiff'] , kde=True ,  ax = axes[0] )
 sns.rugplot(y=df['weightDiff']  ,  ax = axes[0] )
-sns.violinplot(x='Diet', y='weightDiff' , data=df, kind = 'violin' , ax = axes[1])
+sns.violinplot(x='Diet', y='weightDiff' , data=df, ax = axes[1])
 #  assumptions
 
 # QQplots

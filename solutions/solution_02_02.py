@@ -6,7 +6,7 @@ experiment_distrib = stats.binom(n=10,p=0.5)
 #.pmf() gives the probability of realisation of a particular number 
 for i in range(11):
     print('probability of getting',i,'head :',experiment_distrib.pmf(i)) # proba of getting 0 head
-    
+print('***')
 # 1. How likely was this result, provided the coin is fair? 
 print('probability of obtaining 7 heads:' , experiment_distrib.pmf( 7 ) )
 
