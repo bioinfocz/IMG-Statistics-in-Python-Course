@@ -1,4 +1,5 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8070049.svg)](https://doi.org/10.5281/zenodo.8070049)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15607543.svg)](https://doi.org/10.5281/zenodo.15607543)
+
 
 
 # First steps in statistics for life science - with python
@@ -49,4 +50,4 @@ Solutions to each practical can be found in the `solutions/` folder and should b
 ## Citation
 
 Please cite as:
-Wandrille Duchemin. (2023, June 22). Material for the Introduction to Statistics with Python SIB-training course. Zenodo. https://doi.org/10.5281/zenodo.8070049
+Wandrille Duchemin. (2025, June 6). Material for the "Introduction to Statistics with Python" SIB-training course adapted for a self-learning experience. Zenodo. https://doi.org/10.5281/zenodo.15607543
