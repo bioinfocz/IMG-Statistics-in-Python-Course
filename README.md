@@ -1,9 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15607543.svg)](https://doi.org/10.5281/zenodo.15607543)
 
-
-
 # First steps in statistics for life science - with python
-
 
 Statistics are an integral aspect of scientific research, particularly for the life sciences which rely heavily on quantitative methodologies. 
 This course is designed to provide researchers in the life sciences with a gentle introduction to statistics and its application to a variety of biological problems.
@@ -12,26 +9,73 @@ This course is intended for scientists (and in particular life scientists) from 
 
 Although we will provide materials and a reminder on data mamipulation in python, participant must be comfortable with the python environment and be able to read, understand and write basic python commands before attending this course. We also recommend some familiarity with the pandas, and matplotlib libraries.
 
-
 The course will combine lectures on statistics, short tutorials and practical exercises on the topics discussed in the class. These practical exercises will be implemented in the widely used python language and environment for statistical computing and graphics.
-
-
 
 ## Technical prerequisites
 
-Software to be installed PRIOR to the course: 
+Software to be installed **prior** to the course:
 
- * latest python3 distribution, preferably bundled using [conda](https://docs.continuum.io/anaconda/install/)
- * jupyter (https://jupyter.org/install)
+- **Miniconda** — package manager and environment management system ([install guide](https://www.anaconda.com/docs/getting-started/miniconda/install/overview))
 
-Python libraries (we recommend the usage of conda for the installation):
+### Setting up the environment
 
- * [scipy](https://www.scipy.org/install.html) (NB: if you installed conda, then this library is already installed)
- * [statsmodels](https://www.statsmodels.org/stable/install.html) library
- * [pandas](https://pandas.pydata.org/docs/getting_started/index.html)
- * [seaborn](https://seaborn.pydata.org/installing.html)
- * [scikit-learn](https://scikit-learn.org/stable/install.html)
+Create a conda environment from the provided `environment.yml` file:
 
+```bash
+conda env create -f environment.yml
+```
+
+The file specifies the environment name, package channels, and dependencies:
+
+```yaml
+name: statistics_sib
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.14.3
+  - pandas=3.0.2
+  - scipy=1.17.1
+  - seaborn=0.13.2
+  - jupyter=1.1.1
+  - scikit-learn=1.8.0
+  - plotly=6.6.0
+  - statsmodels=0.14.6
+```
+
+## Course Schedule
+
+<table>
+  <tr>
+    <th colspan="3">Day 1 &nbsp;(XX.YY.2026)</th>
+  </tr>
+  <tr>
+    <td>9:00 – 12:00</td>
+    <td>Data Manipulation and Representation</td>
+    <td>Honza</td>
+  </tr>
+  <tr>
+    <td>13:00 – 16:00</td>
+    <td>Distribution and Statistical Tests</td>
+    <td>Mathys</td>
+  </tr>
+
+  <tr><td colspan="3"></td></tr>
+
+  <tr>
+    <th colspan="3">Day 2 &nbsp;(XX.YY.2026)</th>
+  </tr>
+  <tr>
+    <td>9:00 – 12:00</td>
+    <td>Distribution and Statistical Tests – continued</td>
+    <td>Vojta</td>
+  </tr>
+  <tr>
+    <td>13:00 – 16:00</td>
+    <td>Correlation and Regression</td>
+    <td>Lucka</td>
+  </tr>
+</table>
 
 ## Course organization
 
