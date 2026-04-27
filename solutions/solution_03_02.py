@@ -1,4 +1,7 @@
-stat , pval = stats.ks_2samp( mice_data.loc[ mice_data.genotype=='WT' , 'weight'] , 
-                mice_data.loc[ mice_data.genotype=='KO' , 'weight'])
+wt = mice_data[mice_data.genotype == 'WT']['weight']
+ko = mice_data[mice_data.genotype == 'KO']['weight']
 
-print("KS test p-value :", pval)
+ksStat, pvalue = stats.ks_2samp(wt, ko)
+print('1-sample Kolmogorov-Smirnov test:')
+print('KS test statistic :', ksStat)
+print('p-value :', pvalue)
