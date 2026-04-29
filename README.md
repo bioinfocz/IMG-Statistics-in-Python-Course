@@ -41,6 +41,7 @@ dependencies:
   - scikit-learn=1.8.0
   - plotly=6.6.0
   - statsmodels=0.14.6
+  - anndata=0.12.11
 ```
 
 ## Course Schedule
