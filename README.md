@@ -45,37 +45,48 @@ dependencies:
 
 ## Course Schedule
 
-<table>
-  <tr>
-    <th colspan="3">Day 1 &nbsp;(XX.YY.2026)</th>
-  </tr>
-  <tr>
-    <td>9:00 – 12:00</td>
-    <td>Data Manipulation and Representation</td>
-    <td>Honza</td>
-  </tr>
-  <tr>
-    <td>13:00 – 16:00</td>
-    <td>Distribution and Statistical Tests</td>
-    <td>Mathys</td>
-  </tr>
+### Day 1
 
-  <tr><td colspan="3"></td></tr>
+#### Morning
 
-  <tr>
-    <th colspan="3">Day 2 &nbsp;(XX.YY.2026)</th>
-  </tr>
-  <tr>
-    <td>9:00 – 12:00</td>
-    <td>Distribution and Statistical Tests – continued</td>
-    <td>Vojta</td>
-  </tr>
-  <tr>
-    <td>13:00 – 16:00</td>
-    <td>Correlation and Regression</td>
-    <td>Lucka</td>
-  </tr>
-</table>
+| Time | Session | Type | Duration |
+|------|---------|------|----------|
+| 09:30 – 09:40 | Welcome & course overview | Intro | 10 min |
+| 09:40 – 10:10 | **Lecture 1** — Data Visualisation & Exploration | Lecture | 30 min |
+| 10:10 – 11:40 | **Exercises** — [Notebook 1](01_data_manipulation_and_representation.ipynb) | Exercises | 90 min |
+| 11:40 – 12:40 | Lunch | — | 1 h |
+
+#### Afternoon
+
+| Time | Session | Type | Duration |
+|------|---------|------|----------|
+| 12:40 – 14:10 | **Lecture 2** — Distributions & Hypothesis Testing | Lecture | 90 min |
+| 14:10 – 15:10 | **Exercises** — [Notebook 2a](02_distribution_and_statistical_tests.ipynb) | Exercises | 1 h |
+| 15:10 – 15:25 | Break | — | 15 min |
+| 15:25 – 16:25 | **Exercises** — [Notebook 2b](02_distribution_and_statistical_tests.ipynb) | Exercises | 1 h |
+
+---
+
+### Day 2
+
+#### Morning
+
+| Time | Session | Type | Duration |
+|------|---------|------|----------|
+| 09:30 – 10:30 | **Lecture 3** — Statistical Testing, Continued | Lecture | 1 h |
+| 10:30 – 11:15 | **Exercises** — [Notebook 3a](03_distribution_and_statistical_tests_continued.ipynb) | Exercises | 45 min |
+| 11:15 – 11:30 | Break | — | 15 min |
+| 11:30 – 12:15 | **Exercises** — [Notebook 3b](03_distribution_and_statistical_tests_continued.ipynb) | Exercises | 45 min |
+
+#### Afternoon
+
+| Time | Session | Type | Duration |
+|------|---------|------|----------|
+| 13:15 – 13:45 | **Lecture 4** — Correlation & Regression | Lecture | 30 min |
+| 13:45 – 14:45 | **Exercises** — [Notebook 4a](04_correlation_and_regression.ipynb) | Exercises | 1 h |
+| 14:45 – 15:00 | Break | — | 15 min |
+| 15:00 – 16:00 | **Exercises** — [Notebook 4b](04_correlation_and_regression.ipynb) | Exercises | 1 h |
+
 
 ## Course organization
 
