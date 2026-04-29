@@ -1,13 +1,14 @@
 ## First, a little plot to meet the data:
-fig, axes = plt.subplots(1, 2, figsize=(14,7), sharey=True)
+fig, axes = plt.subplots(1, 3, figsize=(15,5), sharey=True)
 
 sns.histplot(y=df['weightDiff'], kde=True, ax = axes[0])
 sns.rugplot(y=df['weightDiff'], ax = axes[0])
 sns.violinplot(x='Diet', y='weightDiff', data=df, ax = axes[1])
+sns.boxplot(x='Diet', y='weightDiff', data=df, fill=False, showmeans=True, ax = axes[2])
 plt.show()
 ## Test the assumptions for ANOVA:
 # QQplots
-fig, axes = plt.subplots(1, 3, figsize=(14,7), sharey=True)
+fig, axes = plt.subplots(1, 3, figsize=(15,5), sharey=True)
 
 # There are 3 levels of diet: 1, 2, and 3
 for i, diet in enumerate([1,2,3]):
@@ -58,13 +59,12 @@ means  = [hsd_res.statistic[i-1][j-1] for i, j in pairs]
 lows   = [ci.low[i-1][j-1]  for i, j in pairs]
 highs  = [ci.high[i-1][j-1] for i, j in pairs]
 
-# half-widths (always positive)
 err_low  = [m - l for m, l in zip(means, lows)]
 err_high = [h - m for h, m in zip(highs, means)]
 
 colors = ['red' if l > 0 or h < 0 else 'steelblue' for l, h in zip(lows, highs)]
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(8,4))
 for idx, (m, el, eh, c) in enumerate(zip(means, err_low, err_high, colors)):
     ax.errorbar(m, idx, xerr=[[el], [eh]], fmt='o', color=c, ecolor=c, elinewidth=2, capsize=5)
 
