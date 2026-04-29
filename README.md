@@ -53,7 +53,7 @@ dependencies:
 |------|---------|------|----------|
 | 09:30 – 09:40 | Welcome & course overview | Intro | 10 min |
 | 09:40 – 10:10 | **Lecture 1** — Data Visualisation & Exploration | Lecture | 30 min |
-| 10:10 – 11:40 | **Exercises** — [Notebook 1](01_data_manipulation_and_representation.ipynb) | Exercises | 90 min |
+| 10:10 – 11:40 | **Exercises** — [Notebook 1](01_EDA.ipynb) | Exercises | 90 min |
 | 11:40 – 12:40 | Lunch | — | 1 h |
 
 #### Afternoon
