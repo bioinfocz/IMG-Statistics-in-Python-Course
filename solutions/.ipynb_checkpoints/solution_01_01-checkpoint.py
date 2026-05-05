@@ -13,8 +13,12 @@ print( "there are" ,mask.sum() , "towns with less than 1000 inhabitants, or more
 df['fraction reformed'] = df['Reformed']/df['Total']
 print( df['fraction reformed'].head()  )
 
-# optional : What is the minimum/maximum value for this fraction?
+# What is the minimum/maximum value for this fraction?
 
 print( 'minimum:' , df['fraction reformed'].min())
 print( 'maximum:' , df['fraction reformed'].max())
 
+#3. How many towns conforming condition 1. while having at least 99% Reformed are in the dataset?
+
+mask2 = mask & (df['fraction reformed']>=0.99)
+print( "there are" ,mask2.sum() , "towns with less than 1000 inhabitants, or more than 1 Foreigner and at least 99% of Reformed" )
