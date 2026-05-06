@@ -1,20 +1,12 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15607543.svg)](https://doi.org/10.5281/zenodo.15607543)
 
-<table border="0">
-<tr>
-<td>
+<div align="right">
+  <img src="images/imglogo-basic-color-nobg-rgb.png" height="50"/>
+  &nbsp;&nbsp;
+  <img src="images/logo-elixir-cz.svg" height="70"/>
+</div>
 
 # First steps in statistics for life science - with python
-
-</td>
-<td align="right">
-
-<img src="images/imglogo-basic-color-nobg-rgb.png" height="50"/>
-<img src="images/logo-elixir-cz.svg" height="70"/>
-
-</td>
-</tr>
-</table>
 
 Statistics are an integral aspect of scientific research, particularly for the life sciences which rely heavily on quantitative methodologies. 
 This course is designed to provide researchers in the life sciences with a gentle introduction to statistics and its application to a variety of biological problems.
