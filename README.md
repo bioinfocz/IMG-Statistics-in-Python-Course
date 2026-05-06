@@ -1,13 +1,13 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15607543.svg)](https://doi.org/10.5281/zenodo.15607543)
 
-<table style="border: none; border-collapse: collapse;">
+<table border="0">
 <tr>
-<td style="border: none;">
+<td>
 
 # First steps in statistics for life science - with python
 
 </td>
-<td style="border: none;" align="right">
+<td align="right">
 
 <img src="images/imglogo-basic-color-nobg-rgb.png" height="50"/>
 <img src="images/logo-elixir-cz.svg" height="70"/>
@@ -91,6 +91,7 @@ dependencies:
 | 10:30 – 11:15 | **Hands-on session** | Exercises | 45 min |
 | 11:15 – 11:30 | Break | — | 15 min |
 | 11:30 – 12:15 | **Hands-on session** | Exercises | 45 min |
+| 12:15 – 13:15 | Lunch | — | 1 h |
 
 #### Afternoon: Correlation & Regression
 
