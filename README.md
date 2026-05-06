@@ -1,6 +1,20 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15607543.svg)](https://doi.org/10.5281/zenodo.15607543)
 
+<table style="border: none; border-collapse: collapse;">
+<tr>
+<td style="border: none;">
+
 # First steps in statistics for life science - with python
+
+</td>
+<td style="border: none;" align="right">
+
+<img src="images/imglogo-basic-color-nobg-rgb.png" height="50"/>
+<img src="images/logo-elixir-cz.svg" height="70"/>
+
+</td>
+</tr>
+</table>
 
 Statistics are an integral aspect of scientific research, particularly for the life sciences which rely heavily on quantitative methodologies. 
 This course is designed to provide researchers in the life sciences with a gentle introduction to statistics and its application to a variety of biological problems.
@@ -41,52 +55,51 @@ dependencies:
   - scikit-learn=1.8.0
   - plotly=6.6.0
   - statsmodels=0.14.6
-  - anndata=0.12.11
 ```
 
 ## Course Schedule
 
-### Day 1
+### Day 1 — 3. 6. 2026
 
-#### Morning
+#### Morning: Data Visualisation & Exploration
 
 | Time | Session | Type | Duration |
 |------|---------|------|----------|
 | 09:30 – 09:40 | Welcome & course overview | Intro | 10 min |
-| 09:40 – 10:10 | **Lecture 1** — Data Visualisation & Exploration | Lecture | 30 min |
-| 10:10 – 11:40 | **Exercises** — [Notebook 1](01_EDA.ipynb) | Exercises | 90 min |
+| 09:40 – 10:10 | **Lecture** | Lecture | 30 min |
+| 10:10 – 11:40 | **Hands-on session** | Exercises | 90 min |
 | 11:40 – 12:40 | Lunch | — | 1 h |
 
-#### Afternoon
+#### Afternoon: Distributions & Hypothesis Testing
 
 | Time | Session | Type | Duration |
 |------|---------|------|----------|
-| 12:40 – 14:10 | **Lecture 2** — Distributions & Hypothesis Testing | Lecture | 90 min |
-| 14:10 – 15:10 | **Exercises** — [Notebook 2a](02_distribution_and_statistical_tests.ipynb) | Exercises | 1 h |
+| 12:40 – 14:10 | **Lecture**  | Lecture | 90 min |
+| 14:10 – 15:10 | **Hands-on session**  | Exercises | 1 h |
 | 15:10 – 15:25 | Break | — | 15 min |
-| 15:25 – 16:25 | **Exercises** — [Notebook 2b](02_distribution_and_statistical_tests.ipynb) | Exercises | 1 h |
+| 15:25 – 16:25 | **Hands-on session** | Exercises | 1 h |
 
 ---
 
-### Day 2
+### Day 2 — 4. 6. 2026
 
-#### Morning
+#### Morning: Statistical Testing, Continued
 
 | Time | Session | Type | Duration |
 |------|---------|------|----------|
-| 09:30 – 10:30 | **Lecture 3** — Statistical Testing, Continued | Lecture | 1 h |
-| 10:30 – 11:15 | **Exercises** — [Notebook 3a](03_distribution_and_statistical_tests_continued.ipynb) | Exercises | 45 min |
+| 09:30 – 10:30 | **Lecture** | Lecture | 1 h |
+| 10:30 – 11:15 | **Hands-on session** | Exercises | 45 min |
 | 11:15 – 11:30 | Break | — | 15 min |
-| 11:30 – 12:15 | **Exercises** — [Notebook 3b](03_distribution_and_statistical_tests_continued.ipynb) | Exercises | 45 min |
+| 11:30 – 12:15 | **Hands-on session** | Exercises | 45 min |
 
-#### Afternoon
+#### Afternoon: Correlation & Regression
 
 | Time | Session | Type | Duration |
 |------|---------|------|----------|
-| 13:15 – 13:45 | **Lecture 4** — Correlation & Regression | Lecture | 30 min |
-| 13:45 – 14:45 | **Exercises** — [Notebook 4a](04_correlation_and_regression.ipynb) | Exercises | 1 h |
+| 13:15 – 13:45 | **Lecture** | Lecture | 30 min |
+| 13:45 – 14:45 | **Hands-on session** | Exercises | 1 h |
 | 14:45 – 15:00 | Break | — | 15 min |
-| 15:00 – 16:00 | **Exercises** — [Notebook 4b](04_correlation_and_regression.ipynb) | Exercises | 1 h |
+| 15:00 – 16:00 | **Hands-on session** | Exercises | 1 h |
 
 
 ## Course organization
@@ -95,7 +108,7 @@ The course is organized in several, numbered, jupyter notebooks, each correspond
 
 The course does not require any particular expertise with jupyter notebooks to be followed, but if it is the first time you encounter them we recommend this [gentle introduction](https://realpython.com/jupyter-notebook-introduction/).
 
- * [01_data_manipulation_and_representation.ipynb](01_data_manipulation_and_representation.ipynb) : an introduction without much statistics, to get everyone up to speed on the pandas, matplotlib, and seaborn libraries. 
+ * [01_exploratory_data_analysis.ipynb](01_exploratory_data_analysis.ipynb ) : an introduction without much statistics, to get everyone up to speed on the pandas, matplotlib, and seaborn libraries. 
  * [02_distribution_and_statistical_tests.ipynb](02_distribution_and_statistical_tests.ipynb)
  * [03_distribution_and_statistical_tests_continued.ipynb](03_distribution_and_statistical_tests_continued.ipynb)
  * [04_correlation_and_regression.ipynb](04_correlation_and_regression.ipynb)
@@ -103,7 +116,10 @@ The course does not require any particular expertise with jupyter notebooks to b
 
 Solutions to each practical can be found in the `solutions/` folder and should be loadable directly in the jupyter notebook themselves.
 
-## Citation
+## Acknowledgments
 
-Please cite as:
+This course is supported by [ELIXIR CZ](https://www.elixir-czech.cz/) and offered free of charge to participants.
+
+This course is based on material originally developed by Wandrille Duchemin for the SIB training course "Introduction to Statistics with Python". 
+
 Wandrille Duchemin. (2025, June 6). Material for the "Introduction to Statistics with Python" SIB-training course adapted for a self-learning experience. Zenodo. https://doi.org/10.5281/zenodo.15607543
