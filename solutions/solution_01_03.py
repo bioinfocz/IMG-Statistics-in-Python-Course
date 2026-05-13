@@ -1,12 +1,9 @@
-k = 'box' 
-
-category='canton name'
-represented_variable="60+ y.o." 
-
-sns.catplot( x = represented_variable , y= category ,
-             data=dfFractions , kind = k , orient='h',height=10, aspect=2 )
+f=sns.catplot( x = '60+ y.o.', y= 'canton name' ,
+             data=dfFractions , kind = 'box' , orient='h',height=5.0, aspect=1.40 )
 plt.grid()
 
-# alternative for the curious
-#sns.kdeplot( x = represented_variable , hue= category ,
-#             data=dfFractions )
+# save PDF, dimensions follow plot
+f.savefig('./exC.pdf')
+
+# save PNG with dpi parameter
+#f.savefig('./exC.png',dpi=150)

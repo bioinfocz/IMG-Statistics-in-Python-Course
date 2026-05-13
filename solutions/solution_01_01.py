@@ -22,3 +22,9 @@ print( 'maximum:' , df['fraction reformed'].max())
 
 mask2 = mask & (df['fraction reformed']>=0.99)
 print( "there are" ,mask2.sum() , "towns with less than 1000 inhabitants, or more than 1 Foreigner and at least 99% of Reformed" )
+
+# 4. Which columns contain zeros (value of 0) and how many appearances of 0 do you observe in each column like that? Anything worth investigating here?
+
+for x in df.columns:
+    if sum(df[x]==0) > 0:
+        print(x,sum(df[x]==0))
