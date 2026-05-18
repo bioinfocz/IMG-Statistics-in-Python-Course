@@ -27,4 +27,4 @@ print( "there are" ,mask2.sum() , "towns with less than 1000 inhabitants, or mor
 
 for x in df.columns:
     if sum(df[x]==0) > 0:
-        print(x,sum(df[x]==0))
+        print('# zeros in column',x,':',sum(df[x]==0))
