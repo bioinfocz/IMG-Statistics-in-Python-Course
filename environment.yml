@@ -1,9 +1,9 @@
-name: statistics_sib
+name: statistics
 channels:
   - defaults
   - conda-forge
 dependencies:
-  - pandas=3.0.2
+  - pandas=2.3.3
   - scipy=1.17.1
   - seaborn=0.13.2
   - jupyter=1.1.1
