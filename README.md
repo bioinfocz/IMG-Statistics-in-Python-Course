@@ -34,19 +34,20 @@ conda env create -f environment.yml
 The file specifies the environment name, package channels, and dependencies:
 
 ```yaml
-name: statistics_sib
+name: statistics
 channels:
   - defaults
   - conda-forge
 dependencies:
-  - python=3.14.3
-  - pandas=3.0.2
+  - pandas=2.3.3
   - scipy=1.17.1
   - seaborn=0.13.2
   - jupyter=1.1.1
   - scikit-learn=1.8.0
+  - python=3.14.3
   - plotly=6.6.0
   - statsmodels=0.14.6
+  - anndata=0.12.11
 ```
 
 ## Course Schedule
