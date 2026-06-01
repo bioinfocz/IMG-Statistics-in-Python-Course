@@ -1,5 +1,7 @@
 # --- Exercise 02 ---
 # Fit a linear model: height ~ bmi
+import statsmodels.formula.api as smf
+from statsmodels.stats.diagnostic import het_white, het_breuschpagan
 
 model = smf.ols(formula='height ~ bmi', data=df)
 results = model.fit()
